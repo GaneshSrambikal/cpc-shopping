@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="bg-container">
+    <header>
+        <div class="logo-branding">
+            <div class="logo">
+                <svg viewBox="0 0 640 512" width="100" title="shoe-logo" id="logo">
+                    <path d="M192 160h32V32h-32c-35.35 0-64 28.65-64 64s28.65 64 64 64zM0 416c0 35.35 28.65 64 64 64h32V352H64c-35.35 0-64 28.65-64 64zm337.46-128c-34.91 0-76.16 13.12-104.73 32-24.79 16.38-44.52 32-104.73 32v128l57.53 15.97c26.21 7.28 53.01 13.12 80.31 15.05 32.69 2.31 65.6.67 97.58-6.2C472.9 481.3 512 429.22 512 384c0-64-84.18-96-174.54-96zM491.42 7.19C459.44.32 426.53-1.33 393.84.99c-27.3 1.93-54.1 7.77-80.31 15.04L256 32v128c60.2 0 79.94 15.62 104.73 32 28.57 18.88 69.82 32 104.73 32C555.82 224 640 192 640 128c0-45.22-39.1-97.3-148.58-120.81z" />
+                </svg>
+            </div>
+            <div class="brand-name">
+                <h1 id="brand-name">LikeNuShus</h1>
+            <p class="tagline">Lightly Used Shoes, Cheap!</p>
+            </div>
+        </div>
+        <div class="cart">
+            <p>cart</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="offer-desp">
+            <h2 id="offer-header">Clearance Items</h2>
+            <p class="category-description" id="offer"><span id="quote">"</span>Gently used floor model sneakers and discontinued styles at our lowest prices of the year. Get 'em before they're gone!<span id="quote">"</span></p>
+        </div>
+        <div class="product">
+            <div class="arrow-left" onclick="plusItem(-1)">&#10094;</div>
+            <div class="item">
+                
+               <div class="product-details">
+                <figure>
+                    <img src="https://assets.codepen.io/t-1/maksim-larin-jZyacqaR4iI-unsplash.jpg" alt="a pair of blue and red ASICS sneakers">
+                    <!-- full size image at: https://images.unsplash.com/photo-1560072810-1cffb09faf0f -->
+                    <figcaption>Photo by Maksim Larin</figcaption>
+            
+                </figure>
+                <div class="product-name-desp">
+                    <h3>Asics</h3>
+                
+                <p class="description">
+                    Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette. Bow detail metallic eyelets leather lining luxurious finish classic courts formal slingback square toe contrasting cap. Lace up fastening bow detailing high stiletto heel leather lining beautiful lace upper elegant peep toe t-bar strap. </p>
+                    <p class="price">$65 USD</p>
+                    <p class="special">Free Shipping!</p>
+                </div>
+               </div>
+                
+               <div class="product-op">
+                <div class="product-options">
+                    <div class="size-color">
+                        <label for="size-select">Size:</label>
+                    <select name="size" id="size-select">
+                        <option value=""></option>
+                        <option value="6">6</option>
+                        <option value="6.5">6.5</option>
+                        <option value="7" disabled>7</option>
+                        <option value="7">7.5</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="9.5" disabled>9.5</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="color-select">Color:</label>
+                    <select name="color" id="color-select">
+                        <option value=""></option>
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="black">black</option>
+                    </select>
+                    </div>
+    
+                    <div class="quantity-buy">
+                        <label for="quantity-select">Quantity:</label>
+                    <select name="quantity" id="quantity-select">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button type="button">Add to Cart</button>
+                    </div>
+                   </div>
+               </div>
+            </div>
+            <div class="item">
+                
+                <div class="product-details">
+                 <figure>
+                     <img src='https://assets.codepen.io/t-1/daniel-storek-JM-qKEd1GMI-unsplash.jpg' alt="a pair of blue and red ASICS sneakers">
+                     <!-- full size image at: https://images.unsplash.com/photo-1560072810-1cffb09faf0f -->
+                     <figcaption>Photo by Daniel Storek</figcaption>
+             
+                 </figure>
+                 <div class="product-name-desp">
+                     <h3>Adidas</h3>
+                 
+                 <p class="description">
+                    Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design. Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette. </p>
+                     <p class="price">$30 USD</p>
+                     <!-- <p class="special">Free Shipping!</p> -->
+                 </div>
+                </div>
+                 
+                <div class="product-op">
+                 <div class="product-options">
+                     <div class="size-color">
+                         <label for="size-select">Size:</label>
+                     <select name="size" id="size-select">
+                         <option value=""></option>
+                         <option value="6">6</option>
+                         <option value="6.5">6.5</option>
+                         <option value="7" disabled>7</option>
+                         <option value="7">7.5</option>
+                         <option value="8">8</option>
+                         <option value="9">9</option>
+                         <option value="9.5" disabled>9.5</option>
+                         <option value="10">10</option>
+                     </select>
+                     <label for="color-select">Color:</label>
+                     <select name="color" id="color-select">
+                        <option value=""></option>
+                        <option value="olive">olive & black</option>
+                        <option value="blue">blue & black</option>
+                        <option value="pink">pink & black</option>
+                    </select>
+                     </div>
+     
+                     <div class="quantity-buy">
+                         <label for="quantity-select">Quantity:</label>
+                     <select name="quantity" id="quantity-select">
+                         <option value=""></option>
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5</option>
+                     </select>
+                     <button type="button">Add to Cart</button>
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                
+                <div class="product-details">
+                 <figure>
+                    <img src="https://assets.codepen.io/t-1/felipepelaquim-6zO5VKogoZE-unsplash.jpg" alt="a New Balance sneaker in olive drab with a black logo">
+                     <!-- full size image at: https://images.unsplash.com/photo-1560072810-1cffb09faf0f -->
+                     <figcaption>Photo by felipepelaquim</figcaption>
+             
+                 </figure>
+                 <div class="product-name-desp">
+                    <h3>New Balance</h3>
+                 
+                 <p class="description">
+                    Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette. Bow detail metallic eyelets leather lining luxurious finish classic courts formal slingback square toe contrasting cap. Lace up fastening bow detailing high stiletto heel leather lining beautiful lace upper elegant peep toe t-bar strap.</p>
+                    <p class="price">$45 USD</p>
+                    <p class="special">Just One Left!</p>
+                 </div>
+                </div>
+                 
+                <div class="product-op">
+                 <div class="product-options">
+                     <div class="size-color">
+                         <label for="size-select">Size:</label>
+                     <select name="size" id="size-select">
+                         <option value=""></option>
+                         <option value="6">6</option>
+                         <option value="6.5">6.5</option>
+                         <option value="7" disabled>7</option>
+                         <option value="7">7.5</option>
+                         <option value="8">8</option>
+                         <option value="9">9</option>
+                         <option value="9.5" disabled>9.5</option>
+                         <option value="10">10</option>
+                     </select>
+                     <label for="color-select">Color:</label>
+                     <select name="color" id="color-select">
+                        <option value=""></option>
+                        <option value="red-blue">white with red and blue trim</option>
+                        <option value="black" disabled>white with black trim</option>
+                    </select>
+                     </div>
+     
+                     <div class="quantity-buy">
+                         <label for="quantity-select">Quantity:</label>
+                     <select name="quantity" id="quantity-select">
+                         <option value=""></option>
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5</option>
+                     </select>
+                     <button type="button">Add to Cart</button>
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-left" onclick="plusItem(1)">&#10095;</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
